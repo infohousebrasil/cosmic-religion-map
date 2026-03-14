@@ -1,0 +1,82 @@
+{
+"nodes":[
+
+{
+"id":"brahman",
+"name":"Brahman",
+"color":"#f1c40f",
+"description":"Realidade suprema no hinduísmo da qual tudo emerge."
+},
+
+{
+"id":"brahma",
+"name":"Brahma",
+"color":"#9b59b6",
+"description":"Deus criador do universo na Trimurti."
+},
+
+{
+"id":"vishnu",
+"name":"Vishnu",
+"color":"#9b59b6",
+"description":"Preservador do cosmos."
+},
+
+{
+"id":"shiva",
+"name":"Shiva",
+"color":"#9b59b6",
+"description":"Transformador do universo."
+},
+
+{
+"id":"lakshmi",
+"name":"Lakshmi",
+"color":"#ff69b4",
+"description":"Deusa da prosperidade."
+},
+
+{
+"id":"saraswati",
+"name":"Saraswati",
+"color":"#ff69b4",
+"description":"Deusa da sabedoria."
+},
+
+{
+"id":"parvati",
+"name":"Parvati",
+"color":"#ff69b4",
+"description":"Consorte de Shiva."
+},
+
+{
+"id":"ganesha",
+"name":"Ganesha",
+"color":"#3498db",
+"description":"Removedor de obstáculos."
+},
+
+{
+"id":"kartikeya",
+"name":"Kartikeya",
+"color":"#3498db",
+"description":"Deus da guerra."
+},
+
+{
+"id":"krishna",
+"name":"Krishna",
+"color":"#2ecc71",
+"description":"Avatar de Vishnu."
+},
+
+{
+"id":"rama",
+"name":"Rama",
+"color":"#2ecc71",
+"description":"Avatar de Vishnu."
+}
+
+]
+}
