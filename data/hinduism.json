@@ -5,77 +5,35 @@
 "id":"brahman",
 "name":"Brahman",
 "color":"#f1c40f",
-"description":"Realidade suprema no hinduísmo da qual tudo emerge."
+"description":"Brahman é a realidade suprema no hinduísmo. Não é um deus pessoal, mas a essência absoluta que sustenta todo o universo. Tudo que existe é considerado manifestação de Brahman."
 },
 
 {
 "id":"brahma",
 "name":"Brahma",
 "color":"#9b59b6",
-"description":"Deus criador do universo na Trimurti."
+"description":"Brahma é o deus criador na Trimurti. Ele é responsável pela criação do universo e de todos os seres vivos."
 },
 
 {
 "id":"vishnu",
 "name":"Vishnu",
 "color":"#9b59b6",
-"description":"Preservador do cosmos."
+"description":"Vishnu é o preservador do cosmos. Ele mantém a ordem do universo e encarna em diferentes avatares para restaurar o dharma."
 },
 
 {
 "id":"shiva",
 "name":"Shiva",
 "color":"#9b59b6",
-"description":"Transformador do universo."
-},
-
-{
-"id":"lakshmi",
-"name":"Lakshmi",
-"color":"#ff69b4",
-"description":"Deusa da prosperidade."
-},
-
-{
-"id":"saraswati",
-"name":"Saraswati",
-"color":"#ff69b4",
-"description":"Deusa da sabedoria."
-},
-
-{
-"id":"parvati",
-"name":"Parvati",
-"color":"#ff69b4",
-"description":"Consorte de Shiva."
+"description":"Shiva representa transformação e destruição necessária para renovação do universo."
 },
 
 {
 "id":"ganesha",
 "name":"Ganesha",
 "color":"#3498db",
-"description":"Removedor de obstáculos."
-},
-
-{
-"id":"kartikeya",
-"name":"Kartikeya",
-"color":"#3498db",
-"description":"Deus da guerra."
-},
-
-{
-"id":"krishna",
-"name":"Krishna",
-"color":"#2ecc71",
-"description":"Avatar de Vishnu."
-},
-
-{
-"id":"rama",
-"name":"Rama",
-"color":"#2ecc71",
-"description":"Avatar de Vishnu."
+"description":"Ganesha é o deus removedor de obstáculos e patrono da sabedoria."
 }
 
 ]
