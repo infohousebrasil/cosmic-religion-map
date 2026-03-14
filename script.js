@@ -1,42 +1,24 @@
-/*
-Cosmic Religion Map
-Script principal responsável por:
+async function loadData(){
 
-1 carregar dados JSON
-2 montar os nós
-3 montar conexões
-4 criar grafo interativo
-5 exibir informações ao clicar
-*/
+const hindu = await fetch("data/hinduism.json").then(r=>r.json())
 
-async function loadData() {
+const relations = await fetch("data/relations.json").then(r=>r.json())
 
-try {
-
-const hinduData = await fetch("data/hinduism.json").then(res => res.json())
-
-const relationData = await fetch("data/relations.json").then(res => res.json())
-
-createGraph(hinduData.nodes, relationData.edges)
-
-}
-catch(error) {
-
-console.error("Erro ao carregar dados:", error)
+createGraph(hindu.nodes,relations.edges)
 
 }
 
-}
-
-function createGraph(nodesData, edgesData){
+function createGraph(nodesData,edgesData){
 
 const nodes = new vis.DataSet(
 
-nodesData.map(node => ({
+nodesData.map(n=>({
 
-id: node.id,
-label: node.name,
-color: node.color
+id:n.id,
+
+label:n.name,
+
+color:n.color
 
 }))
 
@@ -44,32 +26,30 @@ color: node.color
 
 const edges = new vis.DataSet(
 
-edgesData.map(edge => ({
+edgesData.map(e=>({
 
-id: edge.id,
-from: edge.from,
-to: edge.to,
-color: "#888"
+id:e.id,
+
+from:e.from,
+
+to:e.to,
+
+color:"#777"
 
 }))
 
 )
 
-const container = document.getElementById("network")
+const container=document.getElementById("network")
 
-const data = {
-nodes: nodes,
-edges: edges
-}
+const data={nodes,edges}
 
-const options = {
+const options={
 
 nodes:{
 shape:"dot",
-size:18,
-font:{
-color:"white"
-}
+size:20,
+font:{color:"white"}
 },
 
 edges:{
@@ -78,27 +58,25 @@ smooth:true
 
 physics:{
 barnesHut:{
-gravitationalConstant:-2000
+gravitationalConstant:-2500
 }
 }
 
 }
 
-const network = new vis.Network(container, data, options)
+const network=new vis.Network(container,data,options)
 
-/* Evento de clique */
-
-network.on("click", function(params){
+network.on("click",function(params){
 
 if(params.nodes.length){
 
-showNodeInfo(nodesData, params.nodes[0])
+showNode(nodesData,params.nodes[0])
 
 }
 
 if(params.edges.length){
 
-showEdgeInfo(edgesData, params.edges[0])
+showEdge(edgesData,params.edges[0])
 
 }
 
@@ -106,33 +84,61 @@ showEdgeInfo(edgesData, params.edges[0])
 
 }
 
-/* Mostrar informações do nó */
+/* popup */
 
-function showNodeInfo(nodesData, nodeId){
+function showPopup(content){
 
-const node = nodesData.find(n => n.id === nodeId)
+const popup=document.getElementById("popup")
 
-const info = document.getElementById("info")
+const container=document.getElementById("popupContent")
 
-info.innerHTML = `
-<h2>${node.name}</h2>
-<p>${node.description}</p>
-`
+container.innerHTML=content
+
+popup.classList.remove("hidden")
 
 }
 
-/* Mostrar informações da conexão */
+/* fechar popup */
 
-function showEdgeInfo(edgesData, edgeId){
+document.addEventListener("click",function(e){
 
-const edge = edgesData.find(e => e.id === edgeId)
+if(e.target.id==="closeBtn"){
 
-const info = document.getElementById("info")
+document.getElementById("popup").classList.add("hidden")
 
-info.innerHTML = `
+}
+
+})
+
+/* mostrar deus */
+
+function showNode(nodesData,id){
+
+const node=nodesData.find(n=>n.id===id)
+
+showPopup(`
+
+<h2>${node.name}</h2>
+
+<p>${node.description}</p>
+
+`)
+
+}
+
+/* mostrar relação */
+
+function showEdge(edgesData,id){
+
+const edge=edgesData.find(e=>e.id===id)
+
+showPopup(`
+
 <h2>Relação</h2>
+
 <p>${edge.description}</p>
-`
+
+`)
 
 }
 
