@@ -4,10 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cosmic Religion Map</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,27 +16,21 @@
 
 <body>
 
-<header>
-
-<h1>Cosmic Religion Map</h1>
-
-<p>Mapa interativo das divindades das religiões</p>
-
-</header>
-
-<main>
-
 <div id="network"></div>
 
-<aside id="info">
+<!-- Popup de informações -->
 
-<h2>Informações</h2>
+<div id="popup" class="hidden">
 
-<p>Clique em uma divindade ou conexão para ver detalhes.</p>
+<div class="card">
 
-</aside>
+<button id="closeBtn">✕</button>
 
-</main>
+<div id="popupContent"></div>
+
+</div>
+
+</div>
 
 <script src="script.js"></script>
 
