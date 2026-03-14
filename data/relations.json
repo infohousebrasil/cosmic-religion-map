@@ -5,77 +5,28 @@
 "id":"r1",
 "from":"brahman",
 "to":"brahma",
-"description":"Brahma emerge de Brahman."
+"description":"Brahma surge como manifestação criadora da realidade suprema Brahman."
 },
 
 {
 "id":"r2",
 "from":"brahman",
 "to":"vishnu",
-"description":"Vishnu emerge de Brahman."
+"description":"Vishnu representa o aspecto preservador da realidade universal."
 },
 
 {
 "id":"r3",
 "from":"brahman",
 "to":"shiva",
-"description":"Shiva emerge de Brahman."
+"description":"Shiva representa a força transformadora da realidade."
 },
 
 {
 "id":"r4",
-"from":"brahma",
-"to":"saraswati",
-"description":"Saraswati é consorte de Brahma."
-},
-
-{
-"id":"r5",
-"from":"vishnu",
-"to":"lakshmi",
-"description":"Lakshmi é consorte de Vishnu."
-},
-
-{
-"id":"r6",
-"from":"shiva",
-"to":"parvati",
-"description":"Parvati é consorte de Shiva."
-},
-
-{
-"id":"r7",
 "from":"shiva",
 "to":"ganesha",
-"description":"Shiva é pai de Ganesha."
-},
-
-{
-"id":"r8",
-"from":"parvati",
-"to":"ganesha",
-"description":"Parvati é mãe de Ganesha."
-},
-
-{
-"id":"r9",
-"from":"shiva",
-"to":"kartikeya",
-"description":"Shiva é pai de Kartikeya."
-},
-
-{
-"id":"r10",
-"from":"vishnu",
-"to":"krishna",
-"description":"Krishna é avatar de Vishnu."
-},
-
-{
-"id":"r11",
-"from":"vishnu",
-"to":"rama",
-"description":"Rama é avatar de Vishnu."
+"description":"Ganesha é filho de Shiva e Parvati."
 }
 
 ]
