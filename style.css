@@ -1,0 +1,45 @@
+/* Reset básico */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0a12;
+color:white;
+}
+
+/* Cabeçalho */
+
+header{
+text-align:center;
+padding:20px;
+background:#141420;
+border-bottom:1px solid #333;
+}
+
+/* Layout principal */
+
+main{
+display:flex;
+height:90vh;
+}
+
+/* Área do grafo */
+
+#network{
+flex:1;
+background:#0b0b14;
+}
+
+/* Painel lateral */
+
+#info{
+width:320px;
+background:#1a1a26;
+padding:20px;
+border-left:1px solid #333;
+overflow-y:auto;
+}
+
+#info h2{
+margin-top:0;
+}
