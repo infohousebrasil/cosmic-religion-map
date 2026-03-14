@@ -1,45 +1,88 @@
-/* Reset básico */
+/* Reset */
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0a0a12;
-color:white;
+font-family:Arial;
+background:#0b0b14;
+overflow:hidden;
 }
 
-/* Cabeçalho */
-
-header{
-text-align:center;
-padding:20px;
-background:#141420;
-border-bottom:1px solid #333;
-}
-
-/* Layout principal */
-
-main{
-display:flex;
-height:90vh;
-}
-
-/* Área do grafo */
+/* Grafo ocupa tela inteira */
 
 #network{
-flex:1;
-background:#0b0b14;
+
+width:100vw;
+height:100vh;
+
 }
 
-/* Painel lateral */
+/* Popup */
 
-#info{
-width:320px;
+#popup{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.6);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+z-index:100;
+
+}
+
+/* escondido */
+
+.hidden{
+
+display:none;
+
+}
+
+/* card */
+
+.card{
+
 background:#1a1a26;
-padding:20px;
-border-left:1px solid #333;
+
+color:white;
+
+width:90%;
+max-width:420px;
+
+max-height:80vh;
+
 overflow-y:auto;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 0 20px rgba(0,0,0,0.7);
+
 }
 
-#info h2{
-margin-top:0;
+/* botão fechar */
+
+#closeBtn{
+
+float:right;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
 }
